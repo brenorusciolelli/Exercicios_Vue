@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Template</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+<body class="exercicio">
+        <div id="template"></div>
+    <script>
+        new Vue({
+            el: "#template",
+            data: {
+                titulo: "Breno Rusciolelli",
+                subtitulo: "Analista de sistemas"
+            },
+            template: `
+                    <div>
+                        <h1>{{titulo}}</h1>
+                        <h4>{{subtitulo}}</h4>
+                        </div>
+            `
+        })
+    </script>
+</body>
+</html>

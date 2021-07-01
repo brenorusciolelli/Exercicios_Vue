@@ -1,0 +1,678 @@
+package br.gov.ba.tcm.api.rest.request;
+
+import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+
+public class ServidorRecadastramentoRequest  {
+
+
+    private String nuCPF;
+
+
+    private String nomeServidor;
+
+
+    private Integer nuIdentificacaoSocial;
+
+
+    private String numeroRegistroGeral;
+
+  
+    private Short sgUFRegistroGeral;
+
+
+    private String numeroOrgaoRG;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date dataExpedicaoRG;
+
+
+    private Short stHabilitacao;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date dataExpedicaoHabilitacao;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date dtValidadeHabilitacao;
+
+
+    private Integer idUFHabilitacao;
+
+
+    private String nivelFuncao;
+
+
+    private String numeroHabilitacao;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
+    private Date dataExpedicaoCTPS;
+
+
+    private String numeroSerieCTPS;
+
+
+    private Integer numeroCTPS;
+
+
+    private Integer idUF_CTPS;
+
+    private String numeroCEP;
+
+
+    private String numeroLogradouro;
+
+
+    private String dsComplemento;
+
+
+    private String numeroEndereco;
+
+
+    private String nomeBairro;
+
+
+    private Short sgUFEndereco;
+    
+
+    private Integer nuMunicipio;
+
+
+    private String dsEnderecoEletronico;
+
+ 
+    private String numeroTelefone;
+
+
+    private String numeroTelefone2;
+
+
+    private String nomeMae;
+
+
+    private String nomePai;
+
+  
+    private Integer idRaca;
+    
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private Date dataNascimento;
+
+
+    private Short siglaSexo;
+
+
+    private Integer idNacionalidade;
+    
+
+    private Short siglaUFNacimento;
+
+ 
+    private String nuMunicipioNaturalidade;
+
+
+    private Integer idEscolaridade;
+
+ 
+    private Integer idEstadoCivil;
+
+  
+    private String dsTipoConta;
+    
+
+    private Integer numeroBanco;
+
+
+    private String numeroAgencia;
+
+
+    private String numeroContaBancaria;
+
+
+    private String dsTipoContaAuxiliar;
+
+  
+    private Integer numeroBancoContaAuxiliar;
+    
+  
+    private String numeroAgenciaContaAuxiliar;
+
+
+    private String numeroContaBancariaAuxiliar;
+
+
+    private String dsLoginUsuario;
+
+
+   public ServidorRecadastramentoRequest() {
+	   
+   }
+
+
+public ServidorRecadastramentoRequest(String nuCPF, String nomeServidor, Integer nuIdentificacaoSocial,
+		String numeroRegistroGeral, Short sgUFRegistroGeral, String numeroOrgaoRG, Date dataExpedicaoRG,
+		Short stHabilitacao, Date dataExpedicaoHabilitacao, Date dtValidadeHabilitacao, Integer idUFHabilitacao,
+		String nivelFuncao, String numeroHabilitacao, Date dataExpedicaoCTPS, String numeroSerieCTPS,
+		Integer numeroCTPS, Integer idUF_CTPS, String numeroCEP, String numeroLogradouro, String dsComplemento,
+		String numeroEndereco, String nomeBairro, Short sgUFEndereco, Integer nuMunicipio, String dsEnderecoEletronico,
+		String numeroTelefone, String numeroTelefone2, String nomeMae, String nomePai, Integer idRaca,
+		Date dataNascimento, Short siglaSexo, Integer idNacionalidade, Short siglaUFNacimento,
+		String nuMunicipioNaturalidade, Integer idEscolaridade, Integer idEstadoCivil, String dsTipoConta,
+		Integer numeroBanco, String numeroAgencia, String numeroContaBancaria, String dsTipoContaAuxiliar,
+		Integer numeroBancoContaAuxiliar, String numeroAgenciaContaAuxiliar, String numeroContaBancariaAuxiliar,
+		String dsLoginUsuario) {
+	super();
+	this.nuCPF = nuCPF;
+	this.nomeServidor = nomeServidor;
+	this.nuIdentificacaoSocial = nuIdentificacaoSocial;
+	this.numeroRegistroGeral = numeroRegistroGeral;
+	this.sgUFRegistroGeral = sgUFRegistroGeral;
+	this.numeroOrgaoRG = numeroOrgaoRG;
+	this.dataExpedicaoRG = dataExpedicaoRG;
+	this.stHabilitacao = stHabilitacao;
+	this.dataExpedicaoHabilitacao = dataExpedicaoHabilitacao;
+	this.dtValidadeHabilitacao = dtValidadeHabilitacao;
+	this.idUFHabilitacao = idUFHabilitacao;
+	this.nivelFuncao = nivelFuncao;
+	this.numeroHabilitacao = numeroHabilitacao;
+	this.dataExpedicaoCTPS = dataExpedicaoCTPS;
+	this.numeroSerieCTPS = numeroSerieCTPS;
+	this.numeroCTPS = numeroCTPS;
+	this.idUF_CTPS = idUF_CTPS;
+	this.numeroCEP = numeroCEP;
+	this.numeroLogradouro = numeroLogradouro;
+	this.dsComplemento = dsComplemento;
+	this.numeroEndereco = numeroEndereco;
+	this.nomeBairro = nomeBairro;
+	this.sgUFEndereco = sgUFEndereco;
+	this.nuMunicipio = nuMunicipio;
+	this.dsEnderecoEletronico = dsEnderecoEletronico;
+	this.numeroTelefone = numeroTelefone;
+	this.numeroTelefone2 = numeroTelefone2;
+	this.nomeMae = nomeMae;
+	this.nomePai = nomePai;
+	this.idRaca = idRaca;
+	this.dataNascimento = dataNascimento;
+	this.siglaSexo = siglaSexo;
+	this.idNacionalidade = idNacionalidade;
+	this.siglaUFNacimento = siglaUFNacimento;
+	this.nuMunicipioNaturalidade = nuMunicipioNaturalidade;
+	this.idEscolaridade = idEscolaridade;
+	this.idEstadoCivil = idEstadoCivil;
+	this.dsTipoConta = dsTipoConta;
+	this.numeroBanco = numeroBanco;
+	this.numeroAgencia = numeroAgencia;
+	this.numeroContaBancaria = numeroContaBancaria;
+	this.dsTipoContaAuxiliar = dsTipoContaAuxiliar;
+	this.numeroBancoContaAuxiliar = numeroBancoContaAuxiliar;
+	this.numeroAgenciaContaAuxiliar = numeroAgenciaContaAuxiliar;
+	this.numeroContaBancariaAuxiliar = numeroContaBancariaAuxiliar;
+	this.dsLoginUsuario = dsLoginUsuario;
+}
+
+
+public String getNuCPF() {
+	return nuCPF;
+}
+
+
+public void setNuCPF(String nuCPF) {
+	this.nuCPF = nuCPF;
+}
+
+
+public String getNomeServidor() {
+	return nomeServidor;
+}
+
+
+public void setNomeServidor(String nomeServidor) {
+	this.nomeServidor = nomeServidor;
+}
+
+
+public Integer getNuIdentificacaoSocial() {
+	return nuIdentificacaoSocial;
+}
+
+
+public void setNuIdentificacaoSocial(Integer nuIdentificacaoSocial) {
+	this.nuIdentificacaoSocial = nuIdentificacaoSocial;
+}
+
+
+public String getNumeroRegistroGeral() {
+	return numeroRegistroGeral;
+}
+
+
+public void setNumeroRegistroGeral(String numeroRegistroGeral) {
+	this.numeroRegistroGeral = numeroRegistroGeral;
+}
+
+
+public Short getSgUFRegistroGeral() {
+	return sgUFRegistroGeral;
+}
+
+
+public void setSgUFRegistroGeral(Short sgUFRegistroGeral) {
+	this.sgUFRegistroGeral = sgUFRegistroGeral;
+}
+
+
+public String getNumeroOrgaoRG() {
+	return numeroOrgaoRG;
+}
+
+
+public void setNumeroOrgaoRG(String numeroOrgaoRG) {
+	this.numeroOrgaoRG = numeroOrgaoRG;
+}
+
+
+public Date getDataExpedicaoRG() {
+	return dataExpedicaoRG;
+}
+
+
+public void setDataExpedicaoRG(Date dataExpedicaoRG) {
+	this.dataExpedicaoRG = dataExpedicaoRG;
+}
+
+
+public Short getStHabilitacao() {
+	return stHabilitacao;
+}
+
+
+public void setStHabilitacao(Short stHabilitacao) {
+	this.stHabilitacao = stHabilitacao;
+}
+
+
+public Date getDataExpedicaoHabilitacao() {
+	return dataExpedicaoHabilitacao;
+}
+
+
+public void setDataExpedicaoHabilitacao(Date dataExpedicaoHabilitacao) {
+	this.dataExpedicaoHabilitacao = dataExpedicaoHabilitacao;
+}
+
+
+public Date getDtValidadeHabilitacao() {
+	return dtValidadeHabilitacao;
+}
+
+
+public void setDtValidadeHabilitacao(Date dtValidadeHabilitacao) {
+	this.dtValidadeHabilitacao = dtValidadeHabilitacao;
+}
+
+
+public Integer getIdUFHabilitacao() {
+	return idUFHabilitacao;
+}
+
+
+public void setIdUFHabilitacao(Integer idUFHabilitacao) {
+	this.idUFHabilitacao = idUFHabilitacao;
+}
+
+
+public String getNivelFuncao() {
+	return nivelFuncao;
+}
+
+
+public void setNivelFuncao(String nivelFuncao) {
+	this.nivelFuncao = nivelFuncao;
+}
+
+
+public String getNumeroHabilitacao() {
+	return numeroHabilitacao;
+}
+
+
+public void setNumeroHabilitacao(String numeroHabilitacao) {
+	this.numeroHabilitacao = numeroHabilitacao;
+}
+
+
+public Date getDataExpedicaoCTPS() {
+	return dataExpedicaoCTPS;
+}
+
+
+public void setDataExpedicaoCTPS(Date dataExpedicaoCTPS) {
+	this.dataExpedicaoCTPS = dataExpedicaoCTPS;
+}
+
+
+public String getNumeroSerieCTPS() {
+	return numeroSerieCTPS;
+}
+
+
+public void setNumeroSerieCTPS(String numeroSerieCTPS) {
+	this.numeroSerieCTPS = numeroSerieCTPS;
+}
+
+
+public Integer getNumeroCTPS() {
+	return numeroCTPS;
+}
+
+
+public void setNumeroCTPS(Integer numeroCTPS) {
+	this.numeroCTPS = numeroCTPS;
+}
+
+
+public Integer getIdUF_CTPS() {
+	return idUF_CTPS;
+}
+
+
+public void setIdUF_CTPS(Integer idUF_CTPS) {
+	this.idUF_CTPS = idUF_CTPS;
+}
+
+
+public String getNumeroCEP() {
+	return numeroCEP;
+}
+
+
+public void setNumeroCEP(String numeroCEP) {
+	this.numeroCEP = numeroCEP;
+}
+
+
+public String getNumeroLogradouro() {
+	return numeroLogradouro;
+}
+
+
+public void setNumeroLogradouro(String numeroLogradouro) {
+	this.numeroLogradouro = numeroLogradouro;
+}
+
+
+public String getDsComplemento() {
+	return dsComplemento;
+}
+
+
+public void setDsComplemento(String dsComplemento) {
+	this.dsComplemento = dsComplemento;
+}
+
+
+public String getNumeroEndereco() {
+	return numeroEndereco;
+}
+
+
+public void setNumeroEndereco(String numeroEndereco) {
+	this.numeroEndereco = numeroEndereco;
+}
+
+
+public String getNomeBairro() {
+	return nomeBairro;
+}
+
+
+public void setNomeBairro(String nomeBairro) {
+	this.nomeBairro = nomeBairro;
+}
+
+
+public Short getSgUFEndereco() {
+	return sgUFEndereco;
+}
+
+
+public void setSgUFEndereco(Short sgUFEndereco) {
+	this.sgUFEndereco = sgUFEndereco;
+}
+
+
+public Integer getNuMunicipio() {
+	return nuMunicipio;
+}
+
+
+public void setNuMunicipio(Integer nuMunicipio) {
+	this.nuMunicipio = nuMunicipio;
+}
+
+
+public String getDsEnderecoEletronico() {
+	return dsEnderecoEletronico;
+}
+
+
+public void setDsEnderecoEletronico(String dsEnderecoEletronico) {
+	this.dsEnderecoEletronico = dsEnderecoEletronico;
+}
+
+
+public String getNumeroTelefone() {
+	return numeroTelefone;
+}
+
+
+public void setNumeroTelefone(String numeroTelefone) {
+	this.numeroTelefone = numeroTelefone;
+}
+
+
+public String getNumeroTelefone2() {
+	return numeroTelefone2;
+}
+
+
+public void setNumeroTelefone2(String numeroTelefone2) {
+	this.numeroTelefone2 = numeroTelefone2;
+}
+
+
+public String getNomeMae() {
+	return nomeMae;
+}
+
+
+public void setNomeMae(String nomeMae) {
+	this.nomeMae = nomeMae;
+}
+
+
+public String getNomePai() {
+	return nomePai;
+}
+
+
+public void setNomePai(String nomePai) {
+	this.nomePai = nomePai;
+}
+
+
+public Integer getIdRaca() {
+	return idRaca;
+}
+
+
+public void setIdRaca(Integer idRaca) {
+	this.idRaca = idRaca;
+}
+
+
+public Date getDataNascimento() {
+	return dataNascimento;
+}
+
+
+public void setDataNascimento(Date dataNascimento) {
+	this.dataNascimento = dataNascimento;
+}
+
+
+public Short getSiglaSexo() {
+	return siglaSexo;
+}
+
+
+public void setSiglaSexo(Short siglaSexo) {
+	this.siglaSexo = siglaSexo;
+}
+
+
+public Integer getIdNacionalidade() {
+	return idNacionalidade;
+}
+
+
+public void setIdNacionalidade(Integer idNacionalidade) {
+	this.idNacionalidade = idNacionalidade;
+}
+
+
+public Short getSiglaUFNacimento() {
+	return siglaUFNacimento;
+}
+
+
+public void setSiglaUFNacimento(Short siglaUFNacimento) {
+	this.siglaUFNacimento = siglaUFNacimento;
+}
+
+
+public String getNuMunicipioNaturalidade() {
+	return nuMunicipioNaturalidade;
+}
+
+
+public void setNuMunicipioNaturalidade(String nuMunicipioNaturalidade) {
+	this.nuMunicipioNaturalidade = nuMunicipioNaturalidade;
+}
+
+
+public Integer getIdEscolaridade() {
+	return idEscolaridade;
+}
+
+
+public void setIdEscolaridade(Integer idEscolaridade) {
+	this.idEscolaridade = idEscolaridade;
+}
+
+
+public Integer getIdEstadoCivil() {
+	return idEstadoCivil;
+}
+
+
+public void setIdEstadoCivil(Integer idEstadoCivil) {
+	this.idEstadoCivil = idEstadoCivil;
+}
+
+
+public String getDsTipoConta() {
+	return dsTipoConta;
+}
+
+
+public void setDsTipoConta(String dsTipoConta) {
+	this.dsTipoConta = dsTipoConta;
+}
+
+
+public Integer getNumeroBanco() {
+	return numeroBanco;
+}
+
+
+public void setNumeroBanco(Integer numeroBanco) {
+	this.numeroBanco = numeroBanco;
+}
+
+
+public String getNumeroAgencia() {
+	return numeroAgencia;
+}
+
+
+public void setNumeroAgencia(String numeroAgencia) {
+	this.numeroAgencia = numeroAgencia;
+}
+
+
+public String getNumeroContaBancaria() {
+	return numeroContaBancaria;
+}
+
+
+public void setNumeroContaBancaria(String numeroContaBancaria) {
+	this.numeroContaBancaria = numeroContaBancaria;
+}
+
+
+public String getDsTipoContaAuxiliar() {
+	return dsTipoContaAuxiliar;
+}
+
+
+public void setDsTipoContaAuxiliar(String dsTipoContaAuxiliar) {
+	this.dsTipoContaAuxiliar = dsTipoContaAuxiliar;
+}
+
+
+public Integer getNumeroBancoContaAuxiliar() {
+	return numeroBancoContaAuxiliar;
+}
+
+
+public void setNumeroBancoContaAuxiliar(Integer numeroBancoContaAuxiliar) {
+	this.numeroBancoContaAuxiliar = numeroBancoContaAuxiliar;
+}
+
+
+public String getNumeroAgenciaContaAuxiliar() {
+	return numeroAgenciaContaAuxiliar;
+}
+
+
+public void setNumeroAgenciaContaAuxiliar(String numeroAgenciaContaAuxiliar) {
+	this.numeroAgenciaContaAuxiliar = numeroAgenciaContaAuxiliar;
+}
+
+
+public String getNumeroContaBancariaAuxiliar() {
+	return numeroContaBancariaAuxiliar;
+}
+
+
+public void setNumeroContaBancariaAuxiliar(String numeroContaBancariaAuxiliar) {
+	this.numeroContaBancariaAuxiliar = numeroContaBancariaAuxiliar;
+}
+
+
+public String getDsLoginUsuario() {
+	return dsLoginUsuario;
+}
+
+
+public void setDsLoginUsuario(String dsLoginUsuario) {
+	this.dsLoginUsuario = dsLoginUsuario;
+}
+
+   
+
+	
+}
+    

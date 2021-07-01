@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/vue.min.js"></script>
+</head>
+<body class="exercicio">
+    <div id="eventos">
+        <p>{{contador}}</p>
+        <p>
+            <button @click="add">+1</button>
+            <button @click="">+2</button>
+            <button @click="contador += 3">+3</button>
+            <button @click="contador += 4">+4</button>
+            <button @click="contador += 5">+5</button>
+            <button @click="contador += 6">+6</button>
+            <button @click="contador += 7">+7</button>
+            <button @click="contador += 8">+8</button>
+            <button @click="contador += 9">+9</button>
+            <button @click="contador += 0">0</button>
+            <button @click="contador -= 2">-2</button>
+            <button @click="contador *= 2">*2</button>
+            <button @click="contador /= 2">/2</button>
+        </p>
+        <p @mousemove="atualizarPosicao">
+            Coordenadas: {{x}} e {{y}}
+            <span @mousemove.stop>Aqui Não</span>
+        </p>
+        <input type="text" @keyup.enter="alerta">
+    </div>
+    <script>
+        new Vue({
+            el: "#eventos",
+            data: {
+                x: 0,
+                y: 0,
+                contador: 0
+            },
+            methods: {
+                add(){
+                    this.contador++
+                },
+                atualizarPosicao(e){
+                    this.x = e.clientX
+                    this.y = e.clientY
+                },
+            
+            alerta(){
+                alert('Cuidado!')
+            }
+          }
+        })
+    </script>
+</body>
+</html>
